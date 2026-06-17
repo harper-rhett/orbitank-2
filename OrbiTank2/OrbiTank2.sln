@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrbiTank2", "OrbiTank2.csproj", "{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClockworkEngine", "..\clockwork-engine\ClockworkEngine\ClockworkEngine\ClockworkEngine.csproj", "{3F83F00C-5595-E7D0-CB2F-97540136FA17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Debug|x64.ActiveCfg = Debug|x64
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Debug|x64.Build.0 = Debug|x64
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Release|x64.ActiveCfg = Release|x64
+		{A417BEC9-AA6C-46F3-A1E3-79EE2757EA2E}.Release|x64.Build.0 = Release|x64
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Debug|x64.Build.0 = Debug|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F83F00C-5595-E7D0-CB2F-97540136FA17}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35A21E50-3B8F-420B-8D4E-73E9AA15C605}
+	EndGlobalSection
+EndGlobal
