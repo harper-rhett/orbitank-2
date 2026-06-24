@@ -9,7 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\clockwork-engine\ClockworkEngine\ClockworkEngine\ClockworkEngine.csproj" />
+    <ProjectReference Include="..\..\Box2D-dotnet-bindings\src\Box2DBindings\Box2DBindings.csproj" />
+    <ProjectReference Include="..\..\clockwork-engine\ClockworkEngine\ClockworkEngine\ClockworkEngine.csproj" />
   </ItemGroup>
 
   <ItemGroup>
