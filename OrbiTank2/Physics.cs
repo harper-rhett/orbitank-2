@@ -8,8 +8,7 @@ public class Physics : Entity
 
 	public Physics()
 	{
-		WorldDef worldDef = new();
-		worldDef.Gravity = -Vector2.UnitY * 60;
+		WorldDef worldDef = new(Vector2.UnitY * 60);
 		World = new(worldDef);
 	}
 

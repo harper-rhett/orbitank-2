@@ -37,9 +37,11 @@ public class Tank : Entity
 		sprite.Offset = SpriteOffset.Center;
 
 		// Define body
-		BodyDef bodyDef = new();
-		bodyDef.Type = BodyType.Dynamic;
-		bodyDef.Position = position;
+		BodyDef bodyDef = new()
+		{
+			Type = BodyType.Dynamic,
+			Position = position
+		};
 		body = new(scene.Physics.World, bodyDef);
 
 		// Define shape

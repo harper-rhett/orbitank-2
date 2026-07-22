@@ -1,8 +1,6 @@
 ﻿using Clockwork;
-using Clockwork.Utilities;
+using Clockwork.Graphics.Cameras;
 using System.Numerics;
-using Box2D;
-using Clockwork.Graphics.Draw2D;
 
 public class GameScene : Scene
 {
@@ -12,7 +10,8 @@ public class GameScene : Scene
 	{
 		AddEntity(Physics);
 
-		Tank tank = new Tank(this, new Vector2(Engine.HalfGameWidth, Engine.HalfGameHeight), 0);
+		Vector2 spawnPosition = new Vector2(Engine.HalfGameWidth, Engine.HalfGameHeight);
+		Tank tank = new Tank(this, spawnPosition, 0);
 		AddEntity(tank);
 	}
 }
