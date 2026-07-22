@@ -10,8 +10,12 @@ public class GameScene : Scene
 	{
 		AddEntity(Physics);
 
-		Vector2 spawnPosition = new Vector2(Engine.HalfGameWidth, Engine.HalfGameHeight);
-		Tank tank = new Tank(this, spawnPosition, 0);
+		Vector2 tankSpawnPosition = new(Engine.HalfGameWidth, 0);
+		Tank tank = new(this, tankSpawnPosition, 0);
 		AddEntity(tank);
+
+		Vector2 planetSpawnPosition = new(Engine.HalfGameWidth, Engine.HalfGameHeight);
+		Planet planet = new(this, planetSpawnPosition);
+		AddEntity(planet);
 	}
 }

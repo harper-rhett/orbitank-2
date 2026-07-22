@@ -7,7 +7,7 @@ using System.Numerics;
 
 public class Tank : Entity
 {
-	private GameScene scene;
+	private GameScene gameScene;
 	public Transform2D Transform = new();
 	public Vector2 Position
 	{
@@ -26,7 +26,7 @@ public class Tank : Entity
 	public Tank(GameScene gameScene, Vector2 position, float rotation) : base()
 	{
 		// Initialization
-		scene = gameScene;
+		this.gameScene = gameScene;
 		Position = position;
 		Rotation = rotation;
 
@@ -42,7 +42,7 @@ public class Tank : Entity
 			Type = BodyType.Dynamic,
 			Position = position
 		};
-		body = new(scene.Physics.World, bodyDef);
+		body = new(gameScene.Physics.World, bodyDef);
 
 		// Define shape
 		Polygon polygon = Polygon.MakeBox(sprite.HalfWidth, sprite.HalfHeight);
