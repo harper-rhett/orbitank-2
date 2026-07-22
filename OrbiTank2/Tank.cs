@@ -31,7 +31,7 @@ public class Tank : Entity
 		Rotation = rotation;
 
 		// Load textures
-		sprite = new("sprites/tank-body.png", position, rotation);
+		sprite = new("sprites/tank-body.png", Vector2.Zero, rotation);
 		sprite.Transform.Parent = Transform;
 		sprite.Scale = Vector2.One * 5f;
 		sprite.Offset = SpriteOffset.Center;
