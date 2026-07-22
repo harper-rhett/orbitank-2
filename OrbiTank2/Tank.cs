@@ -2,6 +2,7 @@
 using Clockwork;
 using Clockwork.Graphics;
 using Clockwork.Graphics.Draw2D;
+using Clockwork.Input;
 using Clockwork.Utilities;
 using System.Numerics;
 
@@ -40,7 +41,7 @@ public class Tank : Entity
 		BodyDef bodyDef = new()
 		{
 			Type = BodyType.Dynamic,
-			Position = position
+			Position = position,
 		};
 		body = new(gameScene.Physics.World, bodyDef);
 
@@ -54,6 +55,11 @@ public class Tank : Entity
 	{
 		Transform.Position = body.Position;
 		Transform.Rotation = body.Rotation;
+
+		if (Keyboard.IsKeyDown(KeyboardKey.Right))
+		{
+			body.ApplyForceToCenter(Transform.Right * 20000f, true);
+		}
 	}
 
 	public override void OnDraw()
