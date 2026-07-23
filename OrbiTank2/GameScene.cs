@@ -1,10 +1,12 @@
-﻿using Clockwork;
+﻿using Box2D;
+using Clockwork;
 using Clockwork.Graphics.Cameras;
 using System.Numerics;
 
 public class GameScene : Scene
 {
 	public Physics Physics = new();
+	public List<ISatellite> Satellites = new();
 
 	public GameScene()
 	{

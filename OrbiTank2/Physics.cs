@@ -8,8 +8,8 @@ public class Physics : Entity
 
 	public Physics()
 	{
-		Core.LengthUnitsPerMeter = 64;
-		WorldDef worldDef = new(Vector2.UnitY * 60);
+		Core.LengthUnitsPerMeter = 512;
+		WorldDef worldDef = new();
 		World = new(worldDef);
 	}
 
